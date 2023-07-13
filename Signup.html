@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rashik Signup Page</title>
+    <style>
+            input[type]{
+            color: chocolate;
+            width: 200px;
+            height: 20px;
+            margin: 5px;
+            border: 3px solid deeppink;
+        }
+        fieldset{
+            border: 4px solid rgb(238, 13, 159);
+            border-radius: 10px;
+            padding: 10px;
+            border-color: rgb(50, 122, 122);
+
+        }
+        legend{
+            color: rgba(10, 173, 191, 0.727);
+            font-weight: bold;
+            text-decoration: underline;
+        }
+        
+        
+    </style>
+</head>
+<body style="background-color:gainsboro;">
+    <h1 style="color: magenta;"><u>Here is the Signup page</u></h1>
+    <fieldset style="width: max-content;">
+    <legend style="color: rgb(232, 92, 67);"><u><b>Signup</b></u></legend>  
+    <form action="welcome.html">
+        <input type="Text" name="fname" placeholder="Enter the First Name" required minlength="5"><br>
+        <input type="Text" name="lname" placeholder="Enter the Last Name" required><br>
+        <input type="Text" name="Mail" placeholder="Enter the Mail ID" required><br>
+        <input type="Number" name="contact" placeholder="Enter the Mobile Number" required step="0"><br>
+        <input type="date" placeholder="Enter the Date of Birth"><br>
+        <fieldset>
+            <legend style="color: rgb(234, 2, 165);">Gender</legend>
+            <select name="Gender" id="Gender">
+            <option>Select</option>
+            <option value="Male">Male</option>
+            <option value="Female">Female</option>
+            <option value="Others">Others</option>
+
+        </select>
+            </fieldset>
+            
+    <!-- <input type="radio" id="Male" name="Gender">
+    <label for="Male">Male</label><br>
+    <input type="radio" id="Female" name="Gender">
+    <label for="Female">Female</label><br>
+    <input type="radio" id="Others" name="Gender">
+    <label for="Others">Others</label><br> -->
+
+    <br>
+    <fieldset>
+        <legend style="color: tomato;">Notifications</legend>
+        <!-- <input type="Checkbox" name="SmsNotification" id="SmsNote">
+        <label for="SmsNote">For SMS Notification</label><br>
+        <input type="Checkbox" name="MailNotification" id="MailNote">
+        <label for="MailNote">For Mail Notification</label><br>
+        <input type="Checkbox" name="WhatsappNotification" id="WhatsappNote">
+        <label for="WhatsappNote">For Whatsapp Notification</label><br>
+        <input type="Submit" value="Create Account"> -->
+        <select name="Gender" id="Gender">
+            <option>Select</option>
+            <option value="SMSNote">SMS NOTIFICATION</option>
+            <option value="MailNote">MAIL NOTIFICATION</option>
+            <option value="WhatsappNote">WHATSAPP NOTIFICATION</option>
+        </form><br>
+    </select>
+</fieldset>
+</fieldset>
+<input type="Submit" value="Create Account">
+</body>
+</html>
